@@ -61,7 +61,7 @@ class Planetary:
         for planet in self.planets:
             print(planet.name)
 
-    def find_distance_between(self, planet_a, planet_b):
+    def find_distance_between_planets(self, planet_a, planet_b):
         """
         Finds the distance between two planets in the planetary system
         """
@@ -89,7 +89,7 @@ solar_system = Planetary([earth, mars, jupiter])
 
 solar_system.sort_by_day_length()
 
-distance = solar_system.find_distance_between("Earth", "Mars")
+distance = solar_system.find_distance_between_planets("Earth", "Mars")
 
 average_mass = solar_system.find_average_mass()
 
