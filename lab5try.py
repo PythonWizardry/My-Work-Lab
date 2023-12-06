@@ -9,10 +9,10 @@ class Planet:
     """
     Represents a celestial body in a planetary system.
     """
-    def __init__(self, name, mass, orbital_velocity, mean_temperature,
+    def __init__(self, name, mass_kg, orbital_velocity, mean_temperature,
                 length_of_day, distance_from_sun, planet_type):
         self.name = name
-        self.mass = mass
+        self.mass_kg = mass_kg
         self.orbital_velocity = orbital_velocity
         self.mean_temperature = mean_temperature
         self.length_of_day = length_of_day
@@ -76,7 +76,7 @@ class Planetary:
         """
         Calculates the average mass of planets in the planetary system 
         """
-        total_mass = sum(planet.mass for planet in self.planets)
+        total_mass = sum(planet.mass_kg for planet in self.planets)
         return total_mass / len(self.planets)
 
 
