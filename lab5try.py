@@ -40,7 +40,7 @@ class PlanetType(Enum):
     JOVIAN = "Jovian"
 
 
-class PlanetarySystem:
+class Planetary:
     """
     Represents a collection of planets in a planetary system
     """
@@ -85,7 +85,7 @@ mars = Planet("Mars", 6.4171e23, 24.077, -80.0, 24.6, 227.9e6, PlanetType.TERRES
 jupiter = Planet("Jupiter", 1.898e27, 13.07, -145.0, 9.9, 778.5e6, PlanetType.JOVIAN)
 
 
-solar_system = PlanetarySystem([earth, mars, jupiter])
+solar_system = Planetary([earth, mars, jupiter])
 
 solar_system.sort_by_day_length()
 
